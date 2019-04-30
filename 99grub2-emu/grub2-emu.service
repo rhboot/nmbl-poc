@@ -1,0 +1,14 @@
+# Start GRUB emu
+#
+
+[Unit]
+Description=Start GRUB emu
+DefaultDependencies=no
+After=grub2-emu.target sysroot.mount systemd-vconsole-setup.service
+Conflicts=shutdown.target emergency.target
+
+[Service]
+ExecStart=-/bin/grub2-emu --kexec
+ExecStop=-/sbin/reboot
+StandardInput=tty
+StandardOutput=tty
