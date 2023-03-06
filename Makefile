@@ -8,7 +8,7 @@ DESTDIR ?= temp
 DATE=$(shell date "+%Y%m%d")
 .ONESHELL:
 
-all:
+all: nmbl.uki
 
 install-grub2-emu:
 	install -m 0755 -d "$(DESTDIR)/usr/lib/dracut/modules.d/99grub2-emu"
@@ -29,6 +29,9 @@ nmbl.uki:
 
 uki-builder-shell:
 	podman run -i -t -a STDIN,STDOUT,STDERR localhost/nmbl.initrd:$(DATE) /bin/bash -l -i
+
+clean:
+	@rm -vf nmbl.initramfs.img nmbl.uki
 
 
 # vim:ft=make
