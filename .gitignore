@@ -1,3 +1,5 @@
 *~
 *.sw?
+/nmbl.initramfs.img
+/nmbl.uki
 /temp/
