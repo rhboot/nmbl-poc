@@ -26,7 +26,8 @@ install() {
         inst_simple "${moddir}/${i}" "${systemdsystemunitdir}/${i}"
     done
 
-    ln_r "${systemdsystemunitdir}/grub2-emu.service" "${systemdsystemunitdir}/initrd-switch-root.service"
+    # Running here is too early, but we also need dracut-mount to not run
+    ln_r "/dev/null" "${systemdsystemunitdir}/dracut-mount.service"
 
     mkdir -p "${initdir}${systemdsystemunitdir}/grub2-emu.target.wants"
     for i in \
@@ -39,5 +40,8 @@ install() {
         ln_r "${systemdsystemunitdir}/${i}" "${systemdsystemunitdir}/grub2-emu.target.wants/${i}"
     done
 
-    ln_r "${systemdsystemunitdir}/grub2-emu.target" "${systemdsystemunitdir}/default.target"
+    # For now, we override initrd-switch-root, which we don't want to
+    # run.  It would be nicer if we were the default target instead.
+    ln_r "${systemdsystemunitdir}/grub2-emu.service" "${systemdsystemunitdir}/initrd-switch-root.service"
+    # ln_r "${systemdsystemunitdir}/grub2-emu.target" "${systemdsystemunitdir}/default.target"
 }
