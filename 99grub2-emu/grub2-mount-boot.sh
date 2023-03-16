@@ -43,13 +43,9 @@ fi
 
 [ -e "$boot" ] || return 1
 
-[ -d "/grub2boot" ] || mkdir -p -m 0755 "/grub2boot"
-info "Mounting $boot as /grub2boot"
-mount "$boot" /grub2boot || return 1
-if [ -d "/grub2boot/grub2" ]; then
-    ln -s "/grub2boot" "/boot"
-elif [ -d "/grub2boot/boot/grub2" ]; then
-    ln -s "/grub2boot/boot" "/boot"
-fi
+# This doesn't handle /boot being the same fs as /
+[ -d "/boot" ] || mkdir -p -m 0755 "/boot"
+info "Mounting $boot as /boot"
+mount "$boot" /boot || return 1
 
 exit 0
