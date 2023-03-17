@@ -1,5 +1,8 @@
 *~
 *.sw?
+*.tar
+*.tar.?z
+/nmbl*/
 /nmbl.initramfs.img
 /nmbl.uki
 /temp/
