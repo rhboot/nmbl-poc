@@ -1,7 +1,9 @@
 %global debug_package %{nil}
+%global kver %{expand:%(rpm -q kernel-core --qf '%%{VERSION}' | tail -n 1)}
+%global krel %{expand:%(rpm -q kernel-core --qf '%%{RELEASE}' | tail -n 1)}
 
 Summary: nmbl proof of concept as a package
-Name: nmbl
+Name: nmbl-builder
 Version: @@VERSION@@
 Release: @@RELEASE@@%{?dist}
 Group: System Environment/Base
@@ -31,9 +33,18 @@ BuildRequires: systemd-networkd
 BuildRequires: systemd-ukify
 
 # XXX this is a lie until we realize some truth
-Source0: https://github.com/rhboot/nmbl-poc/nmbl-%{version}.tar.xz
+Source0: https://github.com/rhboot/nmbl-poc/nmbl-builder-%{version}.tar.xz
 
 %description
+nmbl-poc is a proof of concept for a bootloader for UEFI machines based on
+the linux kernel and grub-emu, using either switchroot or kexec.
+
+%package -n nmbl
+Summary: nmbl proof of concept as a package
+Version: %{kver}
+Release: %{krel}
+
+%description -n nmbl
 nmbl-poc is a proof of concept for a bootloader for UEFI machines based on
 the linux kernel and grub-emu, using either switchroot or kexec.
 
@@ -46,7 +57,7 @@ make nmbl.uki
 %install
 %make_install ESPDIR="%{efi_esp_dir}"
 
-%files
+%files -n nmbl
 %defattr(-,root,root,-)
 %{efi_esp_dir}/nmbl.uki
 

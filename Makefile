@@ -12,8 +12,8 @@ RELEASE = 1
 OS_NAME ?= $(shell grep '^ID=' /etc/os-release | sed 's/ID=//')
 OS_VERSION ?= $(shell grep '^VERSION_ID=' /etc/os-release | sed 's/VERSION_ID=//')
 OS_DIST ?= $(shell rpm --eval '%{dist}')
-SRPM = nmbl-$(VERSION)-$(RELEASE)$(OS_DIST).src.rpm
-TARBALL = nmbl-$(VERSION).tar.xz
+SRPM = nmbl-builder-$(VERSION)-$(RELEASE)$(OS_DIST).src.rpm
+TARBALL = nmbl-builder-$(VERSION).tar.xz
 KVERREL ?= $(shell rpm -q kernel-core --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -n 1)
 ARCH ?= $(shell rpm --eval '%{_build_arch}')
 RPM = nmbl-$(VERSION)-$(RELEASE)$(OS_DIST).$(ARCH).rpm
@@ -33,7 +33,7 @@ install-grub2-emu:
 	install -m 0755 -d "$(DESTDIR)/etc/grub.d"
 	install -m 0755 -t "$(DESTDIR)/etc/grub.d" etc/grub.d/10_linux
 
-nmbl.spec : nmbl.spec.in
+%.spec : %.spec.in
 	@sed \
 		-e 's,@@VERSION@@,$(VERSION),g' \
 		-e 's,@@RELEASE@@,$(RELEASE),g' \
@@ -53,10 +53,10 @@ nmbl.uki: nmbl.initramfs.img
 		/boot/vmlinuz-$(KVERREL) \
 		"nmbl.initramfs.img"
 
-nmbl-$(VERSION).tar.xz :
-	@git archive --format=tar --prefix=nmbl-$(VERSION)/ HEAD | xz > $@
+$(TARBALL) :
+	@git archive --format=tar --prefix=nmbl-builder-$(VERSION)/ HEAD | xz > $@
 
-$(SRPM) : nmbl.spec $(TARBALL)
+$(SRPM) : nmbl-builder.spec $(TARBALL)
 	@rpmbuild -D "_topdir %(echo $$(pwd))" \
 		  -D '_builddir %{_topdir}' \
 		  -D '_rpmdir %{_topdir}' \
@@ -90,11 +90,11 @@ clean-mock:
 	@mock -r "$(MOCKROOT)" --clean
 
 clean:
-	@rm -vf nmbl.initramfs.img nmbl.uki nmbl.spec \
+	@rm -vf nmbl.initramfs.img nmbl.uki nmbl-builder.spec \
 		build.log hw_info.log installed_pkgs.log root.log state.log \
-		$(wildcard nmbl*.tar nmbl*.tar.xz nmbl*.rpm) 
+		$(wildcard *.tar *.tar.xz *.rpm) 
 
-.PHONY: all clean clean-mock init-mock install install-grub2-emu rpm srpm \
-	tarball
+.PHONY: all clean clean-mock init-mock install install-grub2-emu rpm rpm-deps \
+	srpm tarball
 
 # vim:ft=make
