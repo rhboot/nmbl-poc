@@ -14,6 +14,8 @@ RUN dnf --releasever=38 --nodocs -y --best --allowerasing install systemd-boot-u
 RUN dnf --releasever=38 --nodocs -y --best --allowerasing install kernel
 RUN dnf --releasever=38 --nodocs -y --best --allowerasing install dracut-network
 RUN dnf --releasever=38 --nodocs -y --best --allowerasing install grub2-emu binutils
+RUN dnf --releasever=38 --nodocs -y --best --allowerasing install \
+	lvm2 keyutils dhcp-client btrfs-progs openssh-clients
 COPY 99grub2-emu/* /usr/lib/dracut/modules.d/99grub2-emu/
 COPY etc/dracut-grub2.conf.d/grub2-emu.conf /etc/dracut-grub2.conf.d/
 COPY etc/dracut.conf.d/grub2-emu.conf /etc/dracut.conf.d/ 
