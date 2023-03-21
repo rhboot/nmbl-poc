@@ -2,14 +2,33 @@
 
 Summary: nmbl proof of concept as a package
 Name: nmbl
-Version: 0
-Release: 0%{?dist}
+Version: @@VERSION@@
+Release: @@RELEASE@@%{?dist}
 Group: System Environment/Base
 License: GPLv3
 URL: https://github.com/rhboot/nmbl-poc
 
+BuildRequires: binutils
+BuildRequires: btrfs-progs
+BuildRequires: dhcp-client
+BuildRequires: dracut
+BuildRequires: dracut-network
 BuildRequires: efi-srpm-macros
-BuildRequires: podman
+BuildRequires: findutils
+BuildRequires: git
+BuildRequires: grub2-emu
+BuildRequires: grub2-tools
+BuildRequires: grub2-tools-minimal
+BuildRequires: kernel-core
+BuildRequires: kernel-modules
+BuildRequires: kernel-modules-core
+BuildRequires: keyutils
+BuildRequires: lvm2
+BuildRequires: make
+BuildRequires: openssh-clients
+BuildRequires: systemd-boot
+BuildRequires: systemd-networkd
+BuildRequires: systemd-ukify
 
 # XXX this is a lie until we realize some truth
 Source0: https://github.com/rhboot/nmbl-poc/nmbl-%{version}.tar.xz
