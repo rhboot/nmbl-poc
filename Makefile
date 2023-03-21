@@ -8,6 +8,17 @@ DESTDIR ?= temp
 DATE=$(shell date "+%Y%m%d")
 ESPDIR ?= /boot/efi/EFI/BOOT
 VERSION = 0
+RELEASE = 1
+OS_NAME ?= $(shell grep '^ID=' /etc/os-release | sed 's/ID=//')
+OS_VERSION ?= $(shell grep '^VERSION_ID=' /etc/os-release | sed 's/VERSION_ID=//')
+OS_DIST ?= $(shell rpm --eval '%{dist}')
+SRPM = nmbl-$(VERSION)-$(RELEASE)$(OS_DIST).src.rpm
+TARBALL = nmbl-$(VERSION).tar.xz
+KVERREL ?= $(shell rpm -q kernel-core --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -n 1)
+ARCH ?= $(shell rpm --eval '%{_build_arch}')
+RPM = nmbl-$(VERSION)-$(RELEASE)$(OS_DIST).$(ARCH).rpm
+MOCKROOT ?= $(OS_NAME)-$(OS_VERSION)-$(ARCH)
+
 .ONESHELL:
 
 all: nmbl.uki
@@ -22,44 +33,68 @@ install-grub2-emu:
 	install -m 0755 -d "$(DESTDIR)/etc/grub.d"
 	install -m 0755 -t "$(DESTDIR)/etc/grub.d" etc/grub.d/10_linux
 
-nmbl.uki:
-	set -eu
-	set -o pipefail
-	podman build -f initrd.container --tag localhost/nmbl.initrd:$(DATE) .
-	CTR=$$(podman container run --detach --init localhost/nmbl.initrd:$(DATE) /root/idle)
-	podman cp $${CTR}:/nmbl.initramfs.img .
-	podman cp $${CTR}:/nmbl.uki .
-	podman container stop $${CTR}
+nmbl.spec : nmbl.spec.in
+	@sed \
+		-e 's,@@VERSION@@,$(VERSION),g' \
+		-e 's,@@RELEASE@@,$(RELEASE),g' \
+		$< > $@
 
-uki-builder-shell:
-	podman run -i -t -a STDIN,STDOUT,STDERR localhost/nmbl.initrd:$(DATE) /bin/bash -l -i
+nmbl.initramfs.img:
+	dracut --verbose --confdir /etc/dracut-grub2.conf.d/ --no-hostonly \
+		nmbl.initramfs.img \
+		$(KVERREL)
 
-nmbl-$(VERSION).tar.xz : nmbl-$(VERSION).tar
-	@xz $^
+nmbl.uki: nmbl.initramfs.img
+	/usr/lib/systemd/ukify -o nmbl.uki \
+		--os-release @/etc/os-release \
+		--uname $(KVERREL) \
+		--efi-arch x64 \
+		--stub /usr/lib/systemd/boot/efi/linuxx64.efi.stub \
+		/boot/vmlinuz-$(KVERREL) \
+		"nmbl.initramfs.img"
 
-nmbl-$(VERSION).tar :
-	@git archive --format=tar --prefix=nmbl-$(VERSION)/ HEAD > $@
+nmbl-$(VERSION).tar.xz :
+	@git archive --format=tar --prefix=nmbl-$(VERSION)/ HEAD | xz > $@
 
-tarball : nmbl-$(VERSION).tar.xz
-
-install: nmbl.uki
-	install -m 0755 -d "$(DESTDIR)$(ESPDIR)"
-	install -m 0644 -t "$(DESTDIR)$(ESPDIR)" nmbl.uki
-
-rpm: tarball nmbl.spec
-	@mkdir temp
-	ln nmbl-$(VERSION).tar.xz temp/
-	rpmbuild -D "_topdir %(echo $$(pwd)/temp/)" \
+$(SRPM) : nmbl.spec $(TARBALL)
+	@rpmbuild -D "_topdir %(echo $$(pwd))" \
 		  -D '_builddir %{_topdir}' \
 		  -D '_rpmdir %{_topdir}' \
 		  -D '_sourcedir %{_topdir}' \
 		  -D '_specdir %{_topdir}' \
 		  -D '_srcrpmdir %{_topdir}' \
-		  -ba nmbl.spec
+		  -bs $<
+
+install: nmbl.uki
+	@install -m 0755 -d "$(DESTDIR)$(ESPDIR)"
+	install -m 0644 -t "$(DESTDIR)$(ESPDIR)" nmbl.uki
+
+tarball : $(TARBALL)
+
+srpm : $(SRPM)
+
+init-mock:
+	@mock -r "$(MOCKROOT)" --init
+
+$(RPM) : $(SRPM)
+	@mock -r "$(MOCKROOT)" --installdeps --no-clean $(SRPM)
+	# well, here's a hot mess... this needs to be an rpm we can buildreq on, eventually.
+	find etc/ -exec mock -r "$(MOCKROOT)" --copyin --no-clean {} /{} \;
+	find 99grub2-emu -exec mock -r "$(MOCKROOT)" --copyin --no-clean {} /usr/lib/dracut/modules.d/{} \;
+	mock -r "$(MOCKROOT)" --rebuild --no-clean $(SRPM)
+	cp -av "/var/lib/mock/$(MOCKROOT)/result"/* ./
+
+rpm : $(RPM)
+
+clean-mock:
+	@mock -r "$(MOCKROOT)" --clean
 
 clean:
-	@rm -vf nmbl.initramfs.img nmbl.uki $(wildcard nmbl*.tar nmbl*.tar.xz)
+	@rm -vf nmbl.initramfs.img nmbl.uki nmbl.spec \
+		build.log hw_info.log installed_pkgs.log root.log state.log \
+		$(wildcard nmbl*.tar nmbl*.tar.xz nmbl*.rpm) 
 
-.PHONY: rpm clean install tarball uki-builder-shell install-grub2-emu
+.PHONY: all clean clean-mock init-mock install install-grub2-emu rpm srpm \
+	tarball
 
 # vim:ft=make
