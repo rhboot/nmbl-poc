@@ -8,7 +8,7 @@
 /installed_pkgs.log
 /nmbl*/
 /nmbl.initramfs.img
-/nmbl.spec
+/nmbl-builder.spec
 /nmbl.uki
 /root.log
 /state.log
