@@ -20,10 +20,10 @@ This is intended as a proof of concept for nmbl.
 
 # testing - work in progress
 
-## install fedora
+## install fedora38
 Use UEFI, with /boot on its own partition.
   ```bash
-  dnf install -y pesign mokutil keyutils rsync git emacs-nox dracut-network grub2-emu binutils systemd-ukify kexec-tools btrfs-progs lvm2
+  dnf install -y pesign mokutil keyutils rsync git emacs-nox dracut-network grub2-emu binutils systemd-ukify systemd-boot-unsigned systemd-networkd kexec-tools btrfs-progs lvm2
   ```
 
 ## provision signing

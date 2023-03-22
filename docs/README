@@ -1,0 +1,17 @@
+install.ks is a kickstart file that can be used to automate installation.
+It also creates repos with a new grub build (2.06-89.f38) and Robbie's test
+kernel (6.3.0...) 
+Use with virt-command to completely automate installation. You have to be
+logged-in (kerberos) for this to work because it uses internal repos.
+
+Once you have your machine, run the auto.sh script to transfer the files you
+need onto it, and then ssh there.
+
+Run the scripts in order. 
+s1 will prompt you for a passwd for your cert, and
+after it runs, you need to reboot the machine and enroll the certificate.
+
+After running s2, you can reboot into the new kernel to make sure that
+everything is working as expected.
+
+s3 and s4 are separate scripts for no good reason. Deal with it. :)
