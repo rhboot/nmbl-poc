@@ -1,0 +1,9 @@
+[Unit]
+Description=Counting boot success
+Wants=boot-complete.target
+
+[Service]
+ExecStart=/bin/bash /usr/sbin/boot_count.sh
+
+[Install]
+WantedBy=multi-user.target
