@@ -1,0 +1,40 @@
+%global debug_package %{nil}
+%global kver %{expand:%(rpm -q kernel-core --qf '%%{VERSION}' | tail -n 1)}
+%global krel %{expand:%(rpm -q kernel-core --qf '%%{RELEASE}' | tail -n 1)}
+
+Summary: nmbl proof of concept as a dracut module
+Name: dracut-nmbl
+BuildArch: noarch
+Version: @@VERSION@@
+Release: @@RELEASE@@%{?dist}
+Group: System Environment/Base
+License: GPLv3
+URL: https://github.com/rhboot/nmbl-poc
+
+BuildRequires: git
+BuildRequires: make
+
+Source0: dracut-nmbl-%{version}.tar.xz
+
+%description
+nmbl-poc is a proof of concept for a bootloader for UEFI machines based on
+the linux kernel and grub-emu, using either switchroot or kexec.
+
+%prep
+%autosetup -S git_am
+
+%build
+make all
+
+%install
+%make_install
+
+%files
+%defattr(-,root,root,-)
+%{_sysconfdir}/dracut.conf.d/grub2-emu.conf
+%dir /usr/lib/dracut/modules.d/99grub2-emu
+/usr/lib/dracut/modules.d/99grub2-emu/*
+
+%changelog
+* Fri Mar 17 2023 Peter Jones <pjones@redhat.com> - 0-0
+- Yeet a spec file into the world
