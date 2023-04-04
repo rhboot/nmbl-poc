@@ -32,8 +32,10 @@ make all
 %files
 %defattr(-,root,root,-)
 %{_sysconfdir}/dracut.conf.d/grub2-emu.conf
-%dir /usr/lib/dracut/modules.d/99grub2-emu
-/usr/lib/dracut/modules.d/99grub2-emu/*
+%dir /usr/lib/dracut/modules.d/99grub2-emu-kexec
+/usr/lib/dracut/modules.d/99grub2-emu-kexec/*
+%dir /usr/lib/dracut/modules.d/99grub2-emu-switchroot
+/usr/lib/dracut/modules.d/99grub2-emu-switchroot/*
 
 %changelog
 * Fri Mar 17 2023 Peter Jones <pjones@redhat.com> - 0-0
