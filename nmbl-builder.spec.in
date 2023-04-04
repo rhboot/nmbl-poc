@@ -29,6 +29,7 @@ BuildRequires: keyutils
 BuildRequires: lvm2
 BuildRequires: make
 BuildRequires: openssh-clients
+BuildRequires: pesign
 BuildRequires: systemd-boot
 BuildRequires: systemd-networkd
 BuildRequires: systemd-ukify
@@ -53,8 +54,14 @@ the linux kernel and grub-emu, using either switchroot or kexec.
 
 %build
 make nmbl-cloud.uki
+%pesign -s -i nmbl-cloud.uki -o nmbl-cloud.signed.uki
+mv nmbl-cloud.signed.uki nmbl-cloud.uki
 make nmbl-megalith.uki
+%pesign -s -i nmbl-megalith.uki -o nmbl-megalith.signed.uki
+mv nmbl-megalith.signed.uki nmbl-megalith.uki
 make nmbl-workstation.uki
+%pesign -s -i nmbl-workstation.uki -o nmbl-workstation.signed.uki
+mv nmbl-workstation.signed.uki nmbl-workstation.uki
 
 %install
 %make_install ESPDIR="%{efi_esp_dir}"
