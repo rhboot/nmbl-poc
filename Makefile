@@ -31,7 +31,6 @@ install-grub2-emu:
 	install -m 0755 -d "$(DESTDIR)/etc/dracut.conf.d"
 	install -m 0755 -t "$(DESTDIR)/etc/dracut.conf.d" etc/dracut.conf.d/grub2-emu.conf
 	install -m 0755 -d "$(DESTDIR)/etc/grub.d"
-	install -m 0755 -t "$(DESTDIR)/etc/grub.d" etc/grub.d/10_linux
 
 %.spec : %.spec.in
 	@sed \

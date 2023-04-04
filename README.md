@@ -13,7 +13,6 @@ This is intended as a proof of concept for nmbl.
 | `99grub2-emu/module-setup.sh` | dracut module setup program |
 | `etc/dracut-grub2.conf.d/grub2-emu.conf` | dracut configuration to use this plugin |
 | `etc/dracut.conf.d/grub2-emu.conf` | default dracut configuration to ignore this plugin |
-| `etc/grub.d/10_linux` | grub2-install plugin to build our grub.cfg |
 | `scripts/extract_initrd.sh` | simple (too simple) script to unpack an initramfs |
 | `scripts/generate_initrd.sh` | simple script to generate an initramfs |
 | `kernel patches/sig-bound-v2` | kernel patch series to fix signature size rules |
@@ -47,7 +46,6 @@ mkdir /etc/dracut-grub2.conf.d/
 rsync -avP --del 99grub2-emu/ /usr/lib/dracut/modules.d/99grub2-emu/
 cp etc/dracut-grub2.conf.d/grub2-emu.conf /etc/dracut-grub2.conf.d/
 cp etc/dracut.conf.d/grub2-emu.conf /etc/dracut.conf.d/
-cp etc/grub.d/10_linux /etc/grub.d/
 ```
 
 ## ukify
