@@ -50,13 +50,19 @@ cp etc/dracut.conf.d/grub2-emu.conf /etc/dracut.conf.d/
 
 ## ukify
 ```bash
-dracut --verbose --confdir /etc/dracut-grub2.conf.d/ --no-hostonly ./nmbl.uki 6.3.0-0.rc2.89f5349e0673.24.test.fc38.x86_64 --uefi --kernel-cmdline "quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" --xz
+dracut --verbose --confdir /etc/dracut-grub2.conf.d/ --no-hostonly ./nmbl.uki 6.3.0-0.rc2.89f5349e0673.24.test.fc38.x86_64 --uefi --xz
 pesign -s -c 'Custom Secureboot' -i nmbl.uki -o nmbl.uki.signed
 ```
 
-## replace grubx64.efi with signed uki
-(tbd - right now we're not supposed to do this)
+## install the uki
 ```bash
-mv /boot/efi/EFI/fedora/grubx64.efi{,.bak}
-cp nmbl.uki.signed /boot/efi/EFI/fedora/grubx64.efi
+cp nmbl.uki.signed /boot/efi/EFI/fedora/nmbl.uki
+```
+
+## make a new efibootmgr entry
+```bash
+efibootmgr -q -b 0010 -B ;
+echo -n "\nmbl.uki quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" \
+| iconv -f UTF8 -t UCS-2LE \
+| efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl -l /EFI/fedora/shimx64.efi -@ - -n 0010
 ```
