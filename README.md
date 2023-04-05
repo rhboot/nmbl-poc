@@ -17,7 +17,27 @@ This is intended as a proof of concept for nmbl.
 | `scripts/generate_initrd.sh` | simple script to generate an initramfs |
 | `kernel patches/sig-bound-v2` | kernel patch series to fix signature size rules |
 
-# testing - work in progress
+# testing - work in progress - the easy way:
+
+## build the rpm:
+```bash
+make clean && make OS_DIST=.fc38 OS_VERSION=38 KVRA=6.2.9-300.fc38.x86_64 nmbl-6.2.9-300.fc38.x86_64.rpm
+```
+
+## install that rpm on the machine
+```bash
+rpm -Uvh nmbl-6.2.9-300.fc38.x86_64.rpm
+```
+
+## make a new efibootmgr entry
+```bash
+efibootmgr -q -b 0010 -B ;
+echo -n "\nmbl-workstation.uki quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" \
+| iconv -f UTF8 -t UCS-2LE \
+| efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl -l /EFI/fedora/shimx64.efi -@ - -n 0010
+```
+
+# the old way that's basically the same thing
 
 ## install fedora38
 Use UEFI, with /boot on its own partition.
