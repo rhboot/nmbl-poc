@@ -12,7 +12,7 @@ TARGETS = nmbl-cloud.uki nmbl-megalith.uki nmbl-workstation.uki
 all: $(TARGETS)
 
 %.initramfs.img :
-	@dracut --verbose --confdir "$*.conf.d/" --no-hostonly \
+	@dracut --verbose --confdir "$*.conf.d/" --no-hostonly --xz \
 		$@ $(KVRA)
 
 nmbl-%.uki : %.initramfs.img
