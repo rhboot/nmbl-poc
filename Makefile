@@ -8,7 +8,7 @@ TOPDIR ?= $(realpath ./)
 include $(TOPDIR)/utils.mk
 
 MOCK_ROOT_NAME ?= $(OS_NAME)-$(OS_VERSION)-$(ARCH)
-MOCK_ROOT_PATH ?= $(realpath $(shell mock -r $(MOCK_ROOT_NAME) --print-root-path)/../)
+MOCK_ROOT_PATH ?= $(abspath $(shell mock -r "$(MOCK_ROOT_NAME)" --print-root-path)/../)
 
 all: 
 
