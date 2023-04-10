@@ -45,7 +45,6 @@ the linux kernel and grub-emu, using either switchroot or kexec.
 Summary: nmbl proof of concept as a package
 Version: %{kver}
 Release: %{krel}
-Requires: kexec-tools
 
 %description -n nmbl
 nmbl-poc is a proof of concept for a bootloader for UEFI machines based on
