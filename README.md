@@ -34,7 +34,14 @@ rpm -Uvh nmbl-6.2.9-300.fc38.x86_64.rpm
 efibootmgr -q -b 0010 -B ;
 echo -n "\nmbl-workstation.uki quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" \
 | iconv -f UTF8 -t UCS-2LE \
-| efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl -l /EFI/fedora/shimx64.efi -@ - -n 0010
+| efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl-workstation -l /EFI/fedora/shimx64.efi -@ - -n 0010
+```
+or
+```
+efibootmgr -q -b 0011 -B ;
+echo -n "\nmbl-cloud.uki quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) root=$(awk '/ \/ / {print $1}' /etc/fstab)" \
+| iconv -f UTF8 -t UCS-2LE \
+| efibootmgr -b 0011 -C -d /dev/vda -p 1 -L nmbl-cloud -l /EFI/fedora/shimx64.efi -@ - -n 0011
 ```
 
 # the old way that's basically the same thing
