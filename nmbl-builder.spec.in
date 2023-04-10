@@ -57,9 +57,9 @@ the linux kernel and grub-emu, using either switchroot or kexec.
 make nmbl-cloud.uki
 %pesign -s -i nmbl-cloud.uki -o nmbl-cloud.signed.uki
 mv nmbl-cloud.signed.uki nmbl-cloud.uki
-make nmbl-megalith.uki
-%pesign -s -i nmbl-megalith.uki -o nmbl-megalith.signed.uki
-mv nmbl-megalith.signed.uki nmbl-megalith.uki
+make nmbl-network.uki
+%pesign -s -i nmbl-network.uki -o nmbl-network.signed.uki
+mv nmbl-network.signed.uki nmbl-network.uki
 make nmbl-workstation.uki
 %pesign -s -i nmbl-workstation.uki -o nmbl-workstation.signed.uki
 mv nmbl-workstation.signed.uki nmbl-workstation.uki

@@ -7,7 +7,7 @@
 TOPDIR ?= .
 include $(TOPDIR)/utils.mk
 
-TARGETS = nmbl-cloud.uki nmbl-megalith.uki nmbl-workstation.uki
+TARGETS = nmbl-cloud.uki nmbl-network.uki nmbl-workstation.uki
 
 all: $(TARGETS)
 
