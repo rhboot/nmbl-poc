@@ -9,6 +9,7 @@ include $(TOPDIR)/utils.mk
 
 MOCK_ROOT_NAME ?= $(OS_NAME)-$(OS_VERSION)-$(ARCH)
 MOCK_ROOT_PATH ?= $(abspath $(shell mock -r "$(MOCK_ROOT_NAME)" --print-root-path)/../)
+DEPLOY_HOST ?= nmbl
 
 all: 
 
@@ -36,6 +37,10 @@ nmbl-$(KVRA).rpm: nmbl-builder-$(VR).src.rpm dracut-nmbl-$(VR).noarch.rpm
 	mock -r "$(MOCK_ROOT_NAME)" --rebuild nmbl-builder-$(VR).src.rpm --no-clean
 	mv -v "$(MOCK_ROOT_PATH)/result/$@" .
 
+deploy: nmbl-$(KVRA).rpm
+	scp $< "root@$(DEPLOY_HOST):"
+	ssh "root@$(DEPLOY_HOST)" ./deploy.sh "$<"
+
 init-mock:
 	mock -r "$(MOCK_ROOT_NAME)" --init
 
@@ -45,6 +50,6 @@ clean-mock:
 clean:
 	rm -vf $(wildcard *.tar *.tar.xz *.rpm *.spec) 
 
-.PHONY: all clean clean-mock init-mock
+.PHONY: all clean clean-mock init-mock deploy
 
 # vim:ft=make
