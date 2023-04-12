@@ -1,6 +1,6 @@
 %global debug_package %{nil}
-%global kver %{expand:%(rpm -q kernel-core --qf '%%{VERSION}' | tail -n 1)}
-%global krel %{expand:%(rpm -q kernel-core --qf '%%{RELEASE}' | tail -n 1)}
+%global kver %{expand:%(rpm -q kernel-core --qf '%%{VERSION}\\n' | tail -n 1 )}
+%global krel %{expand:%(rpm -q kernel-core --qf '%%{RELEASE}\\n' | tail -n 1 )}
 
 Summary: nmbl proof of concept as a package
 Name: nmbl-builder
