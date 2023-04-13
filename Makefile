@@ -37,6 +37,8 @@ nmbl-$(KVRA).rpm: nmbl-builder-$(VR).src.rpm dracut-nmbl-$(VR).noarch.rpm
 	mock -r "$(MOCK_ROOT_NAME)" --rebuild nmbl-builder-$(VR).src.rpm --no-clean
 	mv -v "$(MOCK_ROOT_PATH)/result/$@" .
 
+rpm: nmbl-$(KVRA).rpm
+
 deploy: nmbl-$(KVRA).rpm
 	scp $< "root@$(DEPLOY_HOST):"
 	ssh "root@$(DEPLOY_HOST)" ./deploy.sh "$<"
@@ -50,6 +52,6 @@ clean-mock:
 clean:
 	rm -vf $(wildcard *.tar *.tar.xz *.rpm *.spec) 
 
-.PHONY: all clean clean-mock init-mock deploy
+.PHONY: all clean clean-mock init-mock deploy rpm
 
 # vim:ft=make
