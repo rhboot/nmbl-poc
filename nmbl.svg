@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1174.8728mm"
+   height="496.1268mm"
+   viewBox="0 0 1174.8728 496.1268"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="/home/rharwood/loadboot.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="nmbl.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.22815143"
+     inkscape:cx="1382.8535"
+     inkscape:cy="175.32215"
+     inkscape:window-width="1920"
+     inkscape:window-height="1063"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <rect
+       x="256.27481"
+       y="2069.8914"
+       width="565.36377"
+       height="275.59576"
+       id="rect166355" />
+    <rect
+       x="1927.4167"
+       y="1733.5756"
+       width="609.69879"
+       height="147.3241"
+       id="rect160824" />
+    <rect
+       x="1876.0065"
+       y="1423.2362"
+       width="1179.4755"
+       height="367.98853"
+       id="rect154454" />
+    <rect
+       x="360.08762"
+       y="1760.8931"
+       width="308.51828"
+       height="111.96496"
+       id="rect150417" />
+    <rect
+       x="366.45566"
+       y="1504.262"
+       width="759.56067"
+       height="217.66774"
+       id="rect145361" />
+    <rect
+       x="420.63553"
+       y="1281.3348"
+       width="746.14301"
+       height="202.89124"
+       id="rect139571" />
+    <rect
+       x="386.71213"
+       y="1032.0018"
+       width="724.78467"
+       height="286.97205"
+       id="rect133363" />
+    <rect
+       x="277.82556"
+       y="1062.187"
+       width="163.87917"
+       height="76.496811"
+       id="rect132169" />
+    <rect
+       x="379.65594"
+       y="832.52612"
+       width="785.20264"
+       height="228.7092"
+       id="rect125685" />
+    <rect
+       x="277.82562"
+       y="831.81995"
+       width="605.52319"
+       height="134.60199"
+       id="rect122565" />
+    <rect
+       x="392.35947"
+       y="901.7547"
+       width="713.96277"
+       height="175.27612"
+       id="rect118853" />
+    <rect
+       x="388.66257"
+       y="600.14673"
+       width="766.03461"
+       height="282.26288"
+       id="rect116105" />
+    <rect
+       x="-1220.7456"
+       y="1764.1547"
+       width="517.224"
+       height="127.28976"
+       id="rect100868" />
+    <rect
+       x="-1246.8375"
+       y="1405.7419"
+       width="689.7384"
+       height="303.49667"
+       id="rect98926" />
+    <rect
+       x="-1228.0228"
+       y="690.06824"
+       width="740.53888"
+       height="281.20215"
+       id="rect96324" />
+    <rect
+       x="-1239.4941"
+       y="391.93869"
+       width="979.09454"
+       height="279.43622"
+       id="rect80944" />
+    <rect
+       x="-1232.2296"
+       y="82.920647"
+       width="836.49274"
+       height="303.20798"
+       id="rect69030" />
+    <marker
+       style="overflow:visible"
+       id="marker55137"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path55135" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path54261" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path54255" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker54608"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path54606" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker54598"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path54596" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path54243" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path54258" />
+    </marker>
+    <rect
+       x="310.63193"
+       y="1.7805338"
+       width="521.17938"
+       height="119.32852"
+       id="rect51448" />
+    <rect
+       x="-184.57774"
+       y="-10.718489"
+       width="378.07883"
+       height="52.134228"
+       id="rect45899" />
+    <rect
+       x="-661.04761"
+       y="-2.4205446"
+       width="427.95605"
+       height="80.555199"
+       id="rect43195" />
+    <rect
+       x="58.323429"
+       y="805.07776"
+       width="271.32315"
+       height="86.025909"
+       id="rect38678" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-3" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-5" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-6" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-1" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="351.27728"
+       height="100.4079"
+       id="rect10941-1-2" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-5-9" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-6-2" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-1-28" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-97" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-6-2-0" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-1-28-0" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3-5" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="351.27728"
+       height="100.4079"
+       id="rect10941-1-2-5" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-5-9-6" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-6-2-0-9" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-1-28-0-3" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-97-7" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3-4" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3-5-5" />
+    <rect
+       x="58.323429"
+       y="805.07776"
+       width="271.32315"
+       height="86.025909"
+       id="rect38678-2" />
+    <rect
+       x="-1232.2296"
+       y="82.920647"
+       width="836.49274"
+       height="303.20798"
+       id="rect69030-4" />
+    <rect
+       x="-1239.4941"
+       y="391.93869"
+       width="979.09454"
+       height="279.43622"
+       id="rect80944-2" />
+    <rect
+       x="-1232.2296"
+       y="82.920647"
+       width="836.49274"
+       height="303.20798"
+       id="rect69030-4-0" />
+    <rect
+       x="-1239.4941"
+       y="391.93869"
+       width="979.09454"
+       height="279.43622"
+       id="rect80944-2-2" />
+    <rect
+       x="256.27481"
+       y="2069.8914"
+       width="565.36377"
+       height="275.59576"
+       id="rect166355-0" />
+    <rect
+       x="-184.57774"
+       y="-10.718489"
+       width="378.07883"
+       height="52.134228"
+       id="rect45899-3" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-6-2-0-1" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-1-28-0-1" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3-0" />
+    <marker
+       style="overflow:visible"
+       id="marker54608-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path54606-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173191"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173189" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173195"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173193" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173199"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173197" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker55137-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path55135-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173205"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173203" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173209"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173207" />
+    </marker>
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-5-9-9" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="351.27728"
+       height="100.4079"
+       id="rect10941-1-2-1" />
+    <rect
+       x="58.323429"
+       y="805.07776"
+       width="271.32315"
+       height="86.025909"
+       id="rect38678-9" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-97-6" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3-5-9" />
+    <rect
+       x="310.63193"
+       y="1.7805338"
+       width="521.17938"
+       height="119.32852"
+       id="rect51448-3" />
+    <marker
+       style="overflow:visible"
+       id="marker173219"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173217" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173223"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173221" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path54243-8" />
+    </marker>
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-5-9-6-0" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="351.27728"
+       height="100.4079"
+       id="rect10941-1-2-5-5" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-97-7-6" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-3-4-6" />
+    <rect
+       x="-661.04761"
+       y="-2.4205446"
+       width="427.95605"
+       height="80.555199"
+       id="rect43195-4" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-5-0" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-6-0" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-1-4" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="158.20981"
+       height="79.809967"
+       id="rect10941-62" />
+    <rect
+       x="125.52611"
+       y="293.53333"
+       width="272.03293"
+       height="97.239891"
+       id="rect10941-9-6" />
+    <marker
+       style="overflow:visible"
+       id="marker173239"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173237" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173243"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173241" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173247"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173245" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker173251"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path173249" />
+    </marker>
+    <rect
+       x="-1232.2296"
+       y="82.920647"
+       width="836.49274"
+       height="303.20798"
+       id="rect69030-7" />
+    <rect
+       x="-1232.2296"
+       y="82.920647"
+       width="836.49274"
+       height="303.20798"
+       id="rect69030-4-5" />
+    <rect
+       x="-1232.2296"
+       y="82.920647"
+       width="836.49274"
+       height="303.20798"
+       id="rect69030-4-0-6" />
+    <rect
+       x="-1239.4941"
+       y="391.93869"
+       width="979.09454"
+       height="279.43622"
+       id="rect80944-9" />
+    <rect
+       x="-1239.4941"
+       y="391.93869"
+       width="979.09454"
+       height="279.43622"
+       id="rect80944-2-8" />
+    <rect
+       x="-1239.4941"
+       y="391.93869"
+       width="979.09454"
+       height="279.43622"
+       id="rect80944-2-2-7" />
+    <rect
+       x="-1228.0228"
+       y="690.06824"
+       width="740.53888"
+       height="281.20215"
+       id="rect96324-2" />
+    <rect
+       x="-1246.8375"
+       y="1405.7419"
+       width="689.7384"
+       height="303.49667"
+       id="rect98926-8" />
+    <rect
+       x="-1220.7456"
+       y="1764.1547"
+       width="517.224"
+       height="127.28976"
+       id="rect100868-2" />
+    <rect
+       x="388.66257"
+       y="600.14673"
+       width="766.03461"
+       height="282.26288"
+       id="rect116105-9" />
+    <rect
+       x="379.65594"
+       y="832.52612"
+       width="785.20264"
+       height="228.7092"
+       id="rect125685-9" />
+    <rect
+       x="386.71213"
+       y="1032.0018"
+       width="724.78467"
+       height="286.97205"
+       id="rect133363-6" />
+    <rect
+       x="420.63553"
+       y="1281.3348"
+       width="746.14301"
+       height="202.89124"
+       id="rect139571-0" />
+    <rect
+       x="366.45566"
+       y="1504.262"
+       width="759.56067"
+       height="217.66774"
+       id="rect145361-2" />
+    <rect
+       x="360.08762"
+       y="1760.8931"
+       width="308.51828"
+       height="111.96496"
+       id="rect150417-7" />
+    <rect
+       x="1876.0065"
+       y="1423.2362"
+       width="1179.4755"
+       height="367.98853"
+       id="rect154454-6" />
+    <rect
+       x="1927.4167"
+       y="1733.5756"
+       width="609.69879"
+       height="147.3241"
+       id="rect160824-1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(460.50703,-2.5437785)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,27.83232,14.491396)"
+       id="text45897"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect45899);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-184.57812"
+         y="25.676257"
+         id="tspan1098">nmbl (UEFI case)</tspan></text>
+    <g
+       id="g48166"
+       transform="translate(-147.59962,214.30332)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff00ff;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-2-3-3"
+         width="99.25219"
+         height="36.694405"
+         x="121.85545"
+         y="66.733665" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,123.15168,0.94181853)"
+         id="text10939-9-1-2"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-6-2-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1100">menu</tspan></text>
+    </g>
+    <g
+       id="g49987"
+       transform="translate(-152.46684,130.30752)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff7f2a;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-0-4-1"
+         width="99.25219"
+         height="36.694405"
+         x="126.72267"
+         y="210.17332" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,123.80986,144.81556)"
+         id="text10939-0-7-5"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1-28-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1102">kexec()</tspan></text>
+    </g>
+    <g
+       id="g41722-3"
+       transform="translate(-36.64736,41.950712)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#00ff00;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-23-6"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="178.13498" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,0.08388773,112.3757)"
+         id="text10939-06-1"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9-3);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1104">userspace</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="M 23.88193,78.528118 V 101.3291"
+       id="path53403"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="m 23.88193,138.0235 v 22.45164"
+       id="path53405"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="m 23.88193,197.16954 2e-6,22.91615"
+       id="path53407"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-end="#g41722-3"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="m 23.881932,256.7801 -2e-6,24.25689"
+       id="path53409"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g41722-3"
+       inkscape:connection-end="#g48166"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker55137)"
+       d="m 23.881928,317.73139 -10e-7,22.74945"
+       id="path53411"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g48166"
+       inkscape:connection-end="#g49987"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker55137)"
+       d="m 23.881928,377.17525 2e-6,24.02077"
+       id="path53413"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g49987"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker55137)"
+       d="m 23.88193,437.89043 v 22.87526"
+       id="path53417"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g41707-6"
+       transform="translate(-36.64737,33.277341)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#00ccff;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-9-1"
+         width="99.25219"
+         height="36.694405"
+         x="10.9032"
+         y="68.051758" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,14.744493,3.3166939)"
+         id="text10939-5-2"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-5-9);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1106">shim</tspan></text>
+    </g>
+    <g
+       id="g41727"
+       transform="translate(-36.64736,-54.354239)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:2.42097;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         id="rect79-27-6"
+         width="99.25219"
+         height="36.694405"
+         x="10.903191"
+         y="214.82938" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-19.634296,143.50298)"
+         id="text10939-0-1"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1-2);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="168.4375"
+         y="0"><tspan
+           x="130.76413"
+           y="329.92821"
+           id="tspan1110"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan1108">kernel-efimode || </tspan></tspan><tspan
+           x="251.1041"
+           y="379.92821"
+           id="tspan1114"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan1112">initrd </tspan></tspan></text>
+    </g>
+    <g
+       id="g41732"
+       transform="translate(-36.64737,149.67225)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff7f2a;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-75"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="251.52377" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,15.510342,51.442437)"
+         id="text38676"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect38678);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="58.324219"
+           y="841.47313"
+           id="tspan1116">kernel-final</tspan></text>
+    </g>
+    <g
+       id="g41702-8"
+       transform="translate(-36.64736,10.476361)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff8080;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-7-4"
+         width="99.25219"
+         height="36.694405"
+         x="10.903196"
+         y="31.357353" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,15.555809,-33.540492)"
+         id="text10939-50"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-97);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1118">UEFI</tspan></text>
+    </g>
+    <g
+       id="g41722-3-4"
+       transform="translate(-36.64737,282.63071)"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#00ff00;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-23-6-7"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="178.13498" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,0.08388773,112.3757)"
+         id="text10939-06-1-6"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9-3-5);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1120">userspace</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,288.46546,0.4863104)"
+       id="text51446"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect51448);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="310.63281"
+         y="38.176257"
+         id="tspan1122">direct kernel booting (UEFI, </tspan><tspan
+         x="310.63281"
+         y="88.176257"
+         id="tspan1124">nmbl reduction)</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="M 427.02273,75.784685 V 98.585666"
+       id="path53419"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="M 427.02273,135.28007 V 398.45259"
+       id="path53421"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 427.02273,435.147 v 22.87526"
+       id="path53423"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g41707-6-4"
+       transform="translate(366.49343,30.533908)"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#00ccff;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-9-1-4"
+         width="99.25219"
+         height="36.694405"
+         x="10.9032"
+         y="68.051758" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,14.744493,3.3166939)"
+         id="text10939-5-2-3"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-5-9-6);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1126">shim</tspan></text>
+    </g>
+    <g
+       id="g53172"
+       transform="translate(276.13978,289.43125)"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="font-variation-settings:normal;vector-effect:none;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:2.42097;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         id="rect79-27-6-4"
+         width="99.25219"
+         height="36.694405"
+         x="101.25686"
+         y="109.02135" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,70.719372,37.694954)"
+         id="text10939-0-1-7"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1-2-5);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="168.4375"
+         y="0"><tspan
+           x="167.68407"
+           y="329.92821"
+           id="tspan1130"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan1128">kernel-final || </tspan></tspan><tspan
+           x="251.1041"
+           y="379.92821"
+           id="tspan1134"><tspan
+             style="text-align:center;text-anchor:middle"
+             id="tspan1132">initrd </tspan></tspan></text>
+    </g>
+    <g
+       id="g41702-8-4"
+       transform="translate(366.49344,7.7329275)"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff8080;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-7-4-3"
+         width="99.25219"
+         height="36.694405"
+         x="10.903196"
+         y="31.357353" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,15.555809,-33.540492)"
+         id="text10939-50-1"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-97-7);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1136">UEFI</tspan></text>
+    </g>
+    <g
+       id="g41722-3-49"
+       transform="translate(366.49344,279.88728)"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#00ff00;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-23-6-2"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="178.13498" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,0.08388773,112.3757)"
+         id="text10939-06-1-0"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9-3-4);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1138">userspace</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-281.01778,8.5540769)"
+       id="text43193"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect43195);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-661.04688"
+         y="33.975085"
+         id="tspan1140">status quo (UEFI)</tspan></text>
+    <a
+       id="a53367"
+       transform="translate(-278.99773,-5.9060856)"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         id="g41707"
+         transform="translate(-191.20201,36.601178)">
+        <rect
+           style="fill:#00ccff;stroke:#000000;stroke-width:2.42097"
+           id="rect79-27-6-9"
+           width="99.25219"
+           height="36.694405"
+           x="10.9032"
+           y="68.051758" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.26458333,0,0,0.26458333,14.744493,3.3166939)"
+           id="text10939-5"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-5);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+             x="125.52539"
+             y="329.92821"
+             id="tspan1142">shim</tspan></text>
+      </g>
+    </a>
+    <g
+       id="g41712"
+       transform="translate(-470.19974,53.146726)"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff00ff;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-2"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="104.74616" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,11.941045,38.985321)"
+         id="text10939-9"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-6);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1144">grub2</tspan></text>
+    </g>
+    <g
+       id="g41717"
+       transform="translate(-470.19974,257.17321)"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff7f2a;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-0"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="141.44057" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,10.543197,76.705503)"
+         id="text10939-0"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1146">kernel </tspan></text>
+    </g>
+    <g
+       id="g41702"
+       transform="translate(-470.19974,7.8941116)"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ff8080;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-7"
+         width="99.25219"
+         height="36.694405"
+         x="10.903196"
+         y="31.357353" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,15.555809,-33.540492)"
+         id="text10939"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1148">UEFI</tspan></text>
+    </g>
+    <g
+       id="g41722"
+       transform="translate(-470.19974,280.04846)"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#00ff00;stroke:#000000;stroke-width:2.42097"
+         id="rect79-27-6-23"
+         width="99.25219"
+         height="36.694405"
+         x="10.903198"
+         y="178.13498" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,0.08388773,112.3757)"
+         id="text10939-06"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
+           x="125.52539"
+           y="329.92821"
+           id="tspan1150">userspace</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="M -409.67045,75.945869 V 98.74685"
+       id="path53395"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
+       d="m -409.67045,135.44125 v 22.45164"
+       id="path53397"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker55137)"
+       d="m -409.67045,435.30818 v 22.87526"
+       id="path53401"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker54608);paint-order:normal"
+       d="M -409.67045,194.58729 V 398.61377"
+       id="path54855"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,3.5302805,31.324819)"
+       id="text69028"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect69030);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1232.2305"
+         y="112.03593"
+         id="tspan1152">verifies and loads shim</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,436.87705,33.907068)"
+       id="text69028-7"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect69030-4);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1232.2305"
+         y="112.03593"
+         id="tspan1154">verifies and loads shim</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,830.77569,31.163635)"
+       id="text69028-7-6"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect69030-4-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1232.2305"
+         y="112.03593"
+         id="tspan1156">verifies and loads shim</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,5.452127,-7.6368338)"
+       id="text80942"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect80944);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1239.4941"
+         y="421.05546"
+         id="tspan1158">pivots from hardware root of trust to OS root of trust
+</tspan><tspan
+         x="-1239.4941"
+         y="461.05546"
+         id="tspan1160">sets up verification for later components
+</tspan><tspan
+         x="-1239.4941"
+         y="501.05546"
+         id="tspan1162">handles keying/revocations
+</tspan><tspan
+         x="-1239.4941"
+         y="541.05546"
+         id="tspan1164">verifies and loads next stage</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,438.7989,-5.0545852)"
+       id="text80942-4"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect80944-2);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1239.4941"
+         y="421.05546"
+         id="tspan1166">pivots from hardware root of trust to OS root of trust
+</tspan><tspan
+         x="-1239.4941"
+         y="461.05546"
+         id="tspan1168">sets up verification for later components
+</tspan><tspan
+         x="-1239.4941"
+         y="501.05546"
+         id="tspan1170">handles keying/revocations
+</tspan><tspan
+         x="-1239.4941"
+         y="541.05546"
+         id="tspan1172">verifies and loads next stage</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,832.69754,-7.7980182)"
+       id="text80942-4-9"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect80944-2-2);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1239.4941"
+         y="421.05546"
+         id="tspan1174">pivots from hardware root of trust to OS root of trust
+</tspan><tspan
+         x="-1239.4941"
+         y="461.05546"
+         id="tspan1176">sets up verification for later components
+</tspan><tspan
+         x="-1239.4941"
+         y="501.05546"
+         id="tspan1178">handles keying/revocations
+</tspan><tspan
+         x="-1239.4941"
+         y="541.05546"
+         id="tspan1180">verifies and loads next stage</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,2.4419748,-27.370734)"
+       id="text96322"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect96324);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1228.0234"
+         y="719.18437"
+         id="tspan1182">typically hidden / no delay
+</tspan><tspan
+         x="-1228.0234"
+         y="759.18437"
+         id="tspan1184">target selection / editing
+</tspan><tspan
+         x="-1228.0234"
+         y="799.18437"
+         id="tspan1186">handles a limited set of storage/network
+</tspan><tspan
+         x="-1228.0234"
+         y="839.18437"
+         id="tspan1188">calls back to shim to verify kernel</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,7.1801869,13.411456)"
+       id="text98924"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect98926);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1246.8379"
+         y="1434.8582"
+         id="tspan1190">enters EFI stub
+</tspan><tspan
+         x="-1246.8379"
+         y="1474.8582"
+         id="tspan1192">brings up hardware using kernel module </tspan><tspan
+         x="-1246.8379"
+         y="1514.8582"
+         id="tspan1194">drivers
+</tspan><tspan
+         x="-1246.8379"
+         y="1554.8582"
+         id="tspan1196">mount filesystems
+</tspan><tspan
+         x="-1246.8379"
+         y="1594.8582"
+         id="tspan1198">unpack initrd (originally from disk)
+</tspan><tspan
+         x="-1246.8379"
+         y="1634.8582"
+         id="tspan1200">go to userspace</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0.27673236,4.6095822)"
+       id="text100866"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect100868);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/status.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="-1220.7461"
+         y="1793.2703"
+         id="tspan1202">goal</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,7.8008276,-0.99665642)"
+       id="text116103"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect116105);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="388.66211"
+         y="629.26249"
+         id="tspan1204">enters EFI stub
+</tspan><tspan
+         x="388.66211"
+         y="669.26249"
+         id="tspan1206">using UEFI drivers, brings up console + input
+</tspan><tspan
+         x="388.66211"
+         y="709.26249"
+         id="tspan1208">unpacks initrd
+</tspan><tspan
+         x="388.66211"
+         y="749.26249"
+         id="tspan1210">goes to userspace</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text118851"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect118853);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text122563"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect122565);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,10.295249,-2.8696872)"
+       id="text125683"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect125685);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="379.65625"
+         y="861.6414"
+         id="tspan1212">runs any tools needed for next stage
+</tspan><tspan
+         x="379.65625"
+         y="901.6414"
+         id="tspan1214">(e.g., storage, network, etc.)
+</tspan><tspan
+         x="379.65625"
+         y="941.6414"
+         id="tspan1216">mount any filesystems needed
+</tspan><tspan
+         x="379.65625"
+         y="981.6414"
+         id="tspan1218">what tools get run is configurable</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text132167"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect132169);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,8.5894099,5.3034338)"
+       id="text133361"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect133363);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="386.71289"
+         y="1061.118"
+         id="tspan1220">target selection / editing
+</tspan><tspan
+         x="386.71289"
+         y="1101.118"
+         id="tspan1222">for user familiarity, not because we want it
+</tspan><tspan
+         x="386.71289"
+         y="1141.118"
+         id="tspan1224">grub-emu can do this today
+</tspan><tspan
+         x="386.71289"
+         y="1181.118"
+         id="tspan1226">typically hidden/no-delay</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.65860143,9.361527)"
+       id="text139569"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect139571);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="420.63477"
+         y="1310.45"
+         id="tspan1228">verify next kernel using shim's OS root of trust
+</tspan><tspan
+         x="420.63477"
+         y="1350.45"
+         id="tspan1230">(diagram assumes next kernel is Linux)</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,13.67644,-4.7812565)"
+       id="text145359"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect145361);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="366.45508"
+         y="1533.3777"
+         id="tspan1232">enters EFI stub
+</tspan><tspan
+         x="366.45508"
+         y="1573.3777"
+         id="tspan1234">bring up hardware using kernel module drivers
+</tspan><tspan
+         x="366.45508"
+         y="1613.3777"
+         id="tspan1236">mount filesystems
+</tspan><tspan
+         x="366.45508"
+         y="1653.3777"
+         id="tspan1238">unpack initrd (possibly included)
+</tspan><tspan
+         x="366.45508"
+         y="1693.3777"
+         id="tspan1240">go to userspace</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,15.361093,8.0548286)"
+       id="text150415"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect150417);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/nmbl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="360.08789"
+         y="1790.0086"
+         id="tspan1242">goal</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,8.1731979,13.913285)"
+       id="text154452"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect154454);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="1876.0059"
+         y="1452.3523"
+         id="tspan1244">enters EFI stub
+</tspan><tspan
+         x="1876.0059"
+         y="1492.3523"
+         id="tspan1246">bring up hardware using kernel module drivers
+</tspan><tspan
+         x="1876.0059"
+         y="1532.3523"
+         id="tspan1248">mount filesystems
+</tspan><tspan
+         x="1876.0059"
+         y="1572.3523"
+         id="tspan1250">unpack initrd
+</tspan><tspan
+         x="1876.0059"
+         y="1612.3523"
+         id="tspan1252">go to userspace</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-5.4290724,12.538864)"
+       id="text160822"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect160824);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/rharwood/tmp/direct.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="1927.416"
+         y="1762.6922"
+         id="tspan1254">goal</tspan></text>
+  </g>
+</svg>

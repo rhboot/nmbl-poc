@@ -13,12 +13,31 @@ This is intended as a proof of concept for nmbl.
 | `99grub2-emu/module-setup.sh` | dracut module setup program |
 | `etc/dracut-grub2.conf.d/grub2-emu.conf` | dracut configuration to use this plugin |
 | `etc/dracut.conf.d/grub2-emu.conf` | default dracut configuration to ignore this plugin |
-| `etc/grub.d/10_linux` | grub2-install plugin to build our grub.cfg |
 | `scripts/extract_initrd.sh` | simple (too simple) script to unpack an initramfs |
 | `scripts/generate_initrd.sh` | simple script to generate an initramfs |
 | `kernel patches/sig-bound-v2` | kernel patch series to fix signature size rules |
 
-# testing - work in progress
+# testing - work in progress - the easy way:
+
+## build the rpm:
+```bash
+make clean && make OS_DIST=.fc38 OS_VERSION=38 KVRA=6.2.9-300.fc38.x86_64 nmbl-6.2.9-300.fc38.x86_64.rpm
+```
+
+## install that rpm on the machine
+```bash
+rpm -Uvh nmbl-6.2.9-300.fc38.x86_64.rpm
+```
+
+## make a new efibootmgr entry
+```bash
+efibootmgr -q -b 0010 -B ;
+echo -n "\nmbl-workstation.uki quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" \
+| iconv -f UTF8 -t UCS-2LE \
+| efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl -l /EFI/fedora/shimx64.efi -@ - -n 0010
+```
+
+# the old way that's basically the same thing
 
 ## install fedora38
 Use UEFI, with /boot on its own partition.
@@ -47,18 +66,23 @@ mkdir /etc/dracut-grub2.conf.d/
 rsync -avP --del 99grub2-emu/ /usr/lib/dracut/modules.d/99grub2-emu/
 cp etc/dracut-grub2.conf.d/grub2-emu.conf /etc/dracut-grub2.conf.d/
 cp etc/dracut.conf.d/grub2-emu.conf /etc/dracut.conf.d/
-cp etc/grub.d/10_linux /etc/grub.d/
 ```
 
 ## ukify
 ```bash
-dracut --verbose --confdir /etc/dracut-grub2.conf.d/ --no-hostonly ./nmbl.uki 6.3.0-0.rc2.89f5349e0673.24.test.fc38.x86_64 --uefi --kernel-cmdline "quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" --xz
+dracut --verbose --confdir /etc/dracut-grub2.conf.d/ --no-hostonly ./nmbl.uki 6.3.0-0.rc2.89f5349e0673.24.test.fc38.x86_64 --uefi --xz
 pesign -s -c 'Custom Secureboot' -i nmbl.uki -o nmbl.uki.signed
 ```
 
-## replace grubx64.efi with signed uki
-(tbd - right now we're not supposed to do this)
+## install the uki
 ```bash
-mv /boot/efi/EFI/fedora/grubx64.efi{,.bak}
-cp nmbl.uki.signed /boot/efi/EFI/fedora/grubx64.efi
+cp nmbl.uki.signed /boot/efi/EFI/fedora/nmbl.uki
+```
+
+## make a new efibootmgr entry
+```bash
+efibootmgr -q -b 0010 -B ;
+echo -n "\nmbl.uki quiet boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" \
+| iconv -f UTF8 -t UCS-2LE \
+| efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl -l /EFI/fedora/shimx64.efi -@ - -n 0010
 ```

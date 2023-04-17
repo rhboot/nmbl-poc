@@ -1,15 +1,12 @@
 *~
 *.rpm
+*.spec
 *.sw?
 *.tar
 *.tar.?z
 /build.log
 /hw_info.log
 /installed_pkgs.log
-/nmbl*/
-/nmbl.initramfs.img
-/nmbl-builder.spec
-/nmbl.uki
 /root.log
 /state.log
 /temp/

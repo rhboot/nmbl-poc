@@ -14,6 +14,7 @@ BuildRequires: binutils
 BuildRequires: btrfs-progs
 BuildRequires: dhcp-client
 BuildRequires: dracut
+BuildRequires: dracut-nmbl
 BuildRequires: dracut-network
 BuildRequires: efi-srpm-macros
 BuildRequires: findutils
@@ -24,16 +25,17 @@ BuildRequires: grub2-tools-minimal
 BuildRequires: kernel-core
 BuildRequires: kernel-modules
 BuildRequires: kernel-modules-core
+BuildRequires: kexec-tools
 BuildRequires: keyutils
 BuildRequires: lvm2
 BuildRequires: make
 BuildRequires: openssh-clients
+BuildRequires: pesign
 BuildRequires: systemd-boot
 BuildRequires: systemd-networkd
 BuildRequires: systemd-ukify
 
-# XXX this is a lie until we realize some truth
-Source0: https://github.com/rhboot/nmbl-poc/nmbl-builder-%{version}.tar.xz
+Source0: nmbl-builder-%{VERSION}.tar.xz 
 
 %description
 nmbl-poc is a proof of concept for a bootloader for UEFI machines based on
@@ -52,14 +54,22 @@ the linux kernel and grub-emu, using either switchroot or kexec.
 %autosetup -S git_am
 
 %build
-make nmbl.uki
+make nmbl-cloud.uki
+%pesign -s -i nmbl-cloud.uki -o nmbl-cloud.signed.uki
+mv nmbl-cloud.signed.uki nmbl-cloud.uki
+make nmbl-megalith.uki
+%pesign -s -i nmbl-megalith.uki -o nmbl-megalith.signed.uki
+mv nmbl-megalith.signed.uki nmbl-megalith.uki
+make nmbl-workstation.uki
+%pesign -s -i nmbl-workstation.uki -o nmbl-workstation.signed.uki
+mv nmbl-workstation.signed.uki nmbl-workstation.uki
 
 %install
 %make_install ESPDIR="%{efi_esp_dir}"
 
 %files -n nmbl
 %defattr(-,root,root,-)
-%{efi_esp_dir}/nmbl.uki
+%{efi_esp_dir}/*.uki
 
 %changelog
 * Fri Mar 17 2023 Peter Jones <pjones@redhat.com> - 0-0

@@ -4,7 +4,7 @@
 [Unit]
 Description=Start GRUB emu
 DefaultDependencies=no
-After=grub2-emu.target sysroot.mount systemd-vconsole-setup.service
+After=grub2-emu-kexec.target sysroot.mount systemd-vconsole-setup.service
 Conflicts=shutdown.target emergency.target
 
 [Service]

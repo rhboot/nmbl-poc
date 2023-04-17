@@ -1,0 +1,20 @@
+test.sh is a naive script that: 
+- creates an SB-enabled VM with /boot partition
+  - custom SB key already enrolled
+  - /etc/pki/pesign db with said key
+- installs fedora38-- change that by editing virt-install command
+- installs packages needed for signing, etc.
+- installs a new kernel according to repo in install_fedora.ks (currently
+  Robbie's kernel-6.3.0-0.rc2.89f5349e0673.24.test.fc38)
+- implements naive boot logging scheme using systemd target
+- signs new kernel and reboots into it
+- gets correct config files from etc/ and 99grub2-emu/
+- builds nmbl using dracut command
+- allows user to boot using nmbl
+
+This has been tested on hypervisors in Beaker, and seems to be relatively
+robust. It's important to tar xhf this entire directory and then scp the
+tar archive in order to preserve symlinks which point to other directories
+in this repo.
+
+Once you extract the tar archive simply ./test.sh name_of_vm to execute.

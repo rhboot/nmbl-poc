@@ -1,0 +1,4 @@
+Host IPADDR
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+   User root

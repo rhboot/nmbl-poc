@@ -4,97 +4,47 @@
 # Copyright Peter Jones <pjones@redhat.com>
 #
 
-DESTDIR ?= temp
-DATE=$(shell date "+%Y%m%d")
-ESPDIR ?= /boot/efi/EFI/BOOT
-VERSION = 0
-RELEASE = 1
-OS_NAME ?= $(shell grep '^ID=' /etc/os-release | sed 's/ID=//')
-OS_VERSION ?= $(shell grep '^VERSION_ID=' /etc/os-release | sed 's/VERSION_ID=//')
-OS_DIST ?= $(shell rpm --eval '%{dist}')
-SRPM = nmbl-builder-$(VERSION)-$(RELEASE)$(OS_DIST).src.rpm
-TARBALL = nmbl-builder-$(VERSION).tar.xz
-KVERREL ?= $(shell rpm -q kernel-core --qf '%{VERSION}-%{RELEASE}.%{ARCH}\n' | tail -n 1)
-ARCH ?= $(shell rpm --eval '%{_build_arch}')
-RPM = nmbl-$(VERSION)-$(RELEASE)$(OS_DIST).$(ARCH).rpm
-MOCKROOT ?= $(OS_NAME)-$(OS_VERSION)-$(ARCH)
+TOPDIR ?= $(realpath ./)
+include $(TOPDIR)/utils.mk
 
-.ONESHELL:
+MOCK_ROOT_NAME ?= $(OS_NAME)-$(OS_VERSION)-$(ARCH)
+MOCK_ROOT_PATH ?= $(abspath $(shell mock -r "$(MOCK_ROOT_NAME)" --print-root-path)/../)
 
-all: nmbl.uki
+all: 
 
-install-grub2-emu:
-	install -m 0755 -d "$(DESTDIR)/usr/lib/dracut/modules.d/99grub2-emu"
-	install -m 0755 -t "$(DESTDIR)/usr/lib/dracut/modules.d/99grub2-emu" $(wildcard 99grub2-emu/*)
-	install -m 0755 -d "$(DESTDIR)/etc/dracut-grub2.conf.d"
-	install -m 0644 -t "$(DESTDIR)/etc/dracut-grub2.conf.d" etc/dracut-grub2.conf.d/grub2-emu.conf
-	install -m 0755 -d "$(DESTDIR)/etc/dracut.conf.d"
-	install -m 0755 -t "$(DESTDIR)/etc/dracut.conf.d" etc/dracut.conf.d/grub2-emu.conf
-	install -m 0755 -d "$(DESTDIR)/etc/grub.d"
-	install -m 0755 -t "$(DESTDIR)/etc/grub.d" etc/grub.d/10_linux
+dracut-nmbl-$(VERSION).tar.xz :
+	$(MAKE) -C dracut-nmbl tarball
+	mv -v dracut-nmbl/dracut-nmbl-$(VERSION).tar.xz .
 
-%.spec : %.spec.in
-	@sed \
-		-e 's,@@VERSION@@,$(VERSION),g' \
-		-e 's,@@RELEASE@@,$(RELEASE),g' \
-		$< > $@
+dracut-nmbl-$(VR).src.rpm : dracut-nmbl.spec dracut-nmbl-$(VERSION).tar.xz
+	rpmbuild $(RPMBUILD_ARGS) -bs $<
 
-nmbl.initramfs.img:
-	dracut --verbose --confdir /etc/dracut-grub2.conf.d/ --no-hostonly \
-		nmbl.initramfs.img \
-		$(KVERREL)
+dracut-nmbl-$(VR).noarch.rpm : dracut-nmbl-$(VR).src.rpm
+	mock -r "$(MOCK_ROOT_NAME)" --rebuild dracut-nmbl-$(VR).src.rpm
+	mv "$(MOCK_ROOT_PATH)/result/$@" .
 
-nmbl.uki: nmbl.initramfs.img
-	/usr/lib/systemd/ukify -o nmbl.uki \
-		--os-release @/etc/os-release \
-		--uname $(KVERREL) \
-		--efi-arch x64 \
-		--stub /usr/lib/systemd/boot/efi/linuxx64.efi.stub \
-		/boot/vmlinuz-$(KVERREL) \
-		"nmbl.initramfs.img"
+nmbl-builder-$(VERSION).tar.xz :
+	$(MAKE) -C nmbl-builder tarball
+	mv -v nmbl-builder/nmbl-builder-$(VERSION).tar.xz .
 
-$(TARBALL) :
-	@git archive --format=tar --prefix=nmbl-builder-$(VERSION)/ HEAD | xz > $@
+nmbl-builder-$(VR).src.rpm : nmbl-builder.spec nmbl-builder-$(VERSION).tar.xz
+	rpmbuild $(RPMBUILD_ARGS) -bs $<
 
-$(SRPM) : nmbl-builder.spec $(TARBALL)
-	@rpmbuild -D "_topdir %(echo $$(pwd))" \
-		  -D '_builddir %{_topdir}' \
-		  -D '_rpmdir %{_topdir}' \
-		  -D '_sourcedir %{_topdir}' \
-		  -D '_specdir %{_topdir}' \
-		  -D '_srcrpmdir %{_topdir}' \
-		  -bs $<
-
-install: nmbl.uki
-	@install -m 0755 -d "$(DESTDIR)$(ESPDIR)"
-	install -m 0644 -t "$(DESTDIR)$(ESPDIR)" nmbl.uki
-
-tarball : $(TARBALL)
-
-srpm : $(SRPM)
+nmbl-$(KVRA).rpm: nmbl-builder-$(VR).src.rpm dracut-nmbl-$(VR).noarch.rpm
+	mock -r "$(MOCK_ROOT_NAME)" --install dracut-nmbl-$(VR).noarch.rpm --cache-alterations --no-cleanup-after
+	mock -r "$(MOCK_ROOT_NAME)" --installdeps nmbl-builder-$(VR).src.rpm --cache-alterations --no-clean --no-cleanup-after
+	mock -r "$(MOCK_ROOT_NAME)" --rebuild nmbl-builder-$(VR).src.rpm --no-clean
+	mv -v "$(MOCK_ROOT_PATH)/result/$@" .
 
 init-mock:
-	@mock -r "$(MOCKROOT)" --init
-
-$(RPM) : $(SRPM)
-	@mock -r "$(MOCKROOT)" --installdeps --no-clean $(SRPM)
-	# well, here's a hot mess... this needs to be an rpm we can buildreq on, eventually.
-	find etc/ -exec mock -r "$(MOCKROOT)" --copyin --no-clean {} /{} \;
-	find 99grub2-emu -exec mock -r "$(MOCKROOT)" --copyin --no-clean {} /usr/lib/dracut/modules.d/{} \;
-	mock -r "$(MOCKROOT)" --rebuild --no-clean $(SRPM)
-	cp -av "/var/lib/mock/$(MOCKROOT)/result"/* ./
-
-rpm : $(RPM)
+	mock -r "$(MOCK_ROOT_NAME)" --init
 
 clean-mock:
-	@mock -r "$(MOCKROOT)" --clean
+	mock -r "$(MOCK_ROOT_NAME)" --clean
 
 clean:
-	@rm -vf nmbl.initramfs.img nmbl.uki nmbl-builder.spec \
-		build.log hw_info.log installed_pkgs.log root.log state.log \
-		$(wildcard *.tar *.tar.xz *.rpm) 
+	rm -vf $(wildcard *.tar *.tar.xz *.rpm *.spec) 
 
-.PHONY: all clean clean-mock init-mock install install-grub2-emu rpm rpm-deps \
-	srpm tarball
+.PHONY: all clean clean-mock init-mock
 
 # vim:ft=make
