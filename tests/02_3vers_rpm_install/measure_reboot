@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo -e "\n[$(date '+%H:%M:%S  %d-%m-%Y')] rebooting." >> /var/log/entry_booted.txt
+reboot
