@@ -1,0 +1,21 @@
+test.sh is a naive script that: 
+- creates an SB-enabled VM with /boot partition
+  - custom SB key already enrolled
+  - /etc/pki/pesign db with said key
+- installs fedora38-- change that by editing virt-install command
+- installs packages needed for signing, etc.
+- installs and signs two new kernels according to repo in install_fedora.ks
+- implements naive boot logging scheme using systemd target: log is
+/var/log/entry_booted.txt
+- installs nmbl built with 6.3.0 kernel
+- signs all three ukis and creates efi boot entries for them
+- sets BootNext to nmbl (megalith)
+- allows user to boot using nmbl
+- user can optionally use the measure_reboot command to capture time needed
+to reboot
+
+It's important to tar xhf the entire tests directory and then scp the
+tar archive in order to preserve symlinks which point to other directories
+in this repo and have the necessary files to perform VM installation, etc.
+
+Once you extract the tar archive simply ./test.sh name_of_vm to execute.
