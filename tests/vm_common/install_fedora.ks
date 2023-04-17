@@ -27,6 +27,12 @@ baseurl=http://file.emea.redhat.com/mlewando/nmbl_kernel/
 enabled=1
 gpgcheck=0
 
+[kernel_2]
+name=rh_kernel_2
+baseurl=http://file.emea.redhat.com/~mlewando/kernel-6.2.9-300.fc38.x86_64/
+enabled=1
+gpgcheck=0
+
 [grub-89]
 name=grub-89
 baseurl=http://file.emea.redhat.com/mlewando/grub2-2.06-89.fc38.x86_64/

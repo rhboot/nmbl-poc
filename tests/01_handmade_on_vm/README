@@ -13,8 +13,8 @@ test.sh is a naive script that:
 - allows user to boot using nmbl
 
 This has been tested on hypervisors in Beaker, and seems to be relatively
-robust. It's important to tar xhf this entire directory and then scp the
+robust. It's important to tar xhf the entire tests directory and then scp the
 tar archive in order to preserve symlinks which point to other directories
-in this repo.
+in this repo and have the necessary files to perform VM installation, etc.
 
 Once you extract the tar archive simply ./test.sh name_of_vm to execute.
