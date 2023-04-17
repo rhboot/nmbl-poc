@@ -10,4 +10,4 @@ chmod +rx $tmp_dir
 semanage fcontext -a -t virt_log_t "$tmp_dir(/.*)?"
 restorecon $tmp_dir
 
-chmod 600 id_rsa_test
+chmod 600 ${vm_dir}/id_rsa_test
