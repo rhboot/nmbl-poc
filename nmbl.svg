@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.22815143"
-     inkscape:cx="1382.8535"
-     inkscape:cy="175.32215"
+     inkscape:zoom="0.32265485"
+     inkscape:cx="2381.8021"
+     inkscape:cy="570.26882"
      inkscape:window-width="1920"
      inkscape:window-height="1063"
      inkscape:window-x="0"
@@ -865,7 +865,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-184.57812"
          y="25.676257"
-         id="tspan1098">nmbl (UEFI case)</tspan></text>
+         id="tspan862">nmbl (UEFI case)</tspan></text>
     <g
        id="g48166"
        transform="translate(-147.59962,214.30332)"
@@ -886,7 +886,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-6-2-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1100">menu</tspan></text>
+           id="tspan864">menu</tspan></text>
     </g>
     <g
        id="g49987"
@@ -908,7 +908,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1-28-0);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1102">kexec()</tspan></text>
+           id="tspan866">kexec()</tspan></text>
     </g>
     <g
        id="g41722-3"
@@ -930,7 +930,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9-3);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1104">userspace</tspan></text>
+           id="tspan868">userspace</tspan></text>
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
@@ -1021,7 +1021,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-5-9);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1106">shim</tspan></text>
+           id="tspan870">shim</tspan></text>
     </g>
     <g
        id="g41727"
@@ -1038,21 +1038,18 @@
          y="214.82938" />
       <text
          xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-19.634296,143.50298)"
+         transform="matrix(0.26458333,0,0,0.26458333,-19.634296,149.32385)"
          id="text10939-0-1"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1-2);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="168.4375"
          y="0"><tspan
-           x="130.76413"
+           x="159.6441"
            y="329.92821"
-           id="tspan1110"><tspan
+           id="tspan876"><tspan
              style="text-align:center;text-anchor:middle"
-             id="tspan1108">kernel-efimode || </tspan></tspan><tspan
-           x="251.1041"
-           y="379.92821"
-           id="tspan1114"><tspan
+             id="tspan872">kernel || </tspan><tspan
              style="text-align:center;text-anchor:middle"
-             id="tspan1112">initrd </tspan></tspan></text>
+             id="tspan874">initrd </tspan></tspan></text>
     </g>
     <g
        id="g41732"
@@ -1074,7 +1071,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect38678);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="58.324219"
            y="841.47313"
-           id="tspan1116">kernel-final</tspan></text>
+           id="tspan878">kernel-final</tspan></text>
     </g>
     <g
        id="g41702-8"
@@ -1096,7 +1093,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-97);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1118">UEFI</tspan></text>
+           id="tspan880">UEFI</tspan></text>
     </g>
     <g
        id="g41722-3-4"
@@ -1118,7 +1115,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9-3-5);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1120">userspace</tspan></text>
+           id="tspan882">userspace</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -1130,10 +1127,10 @@
        inkscape:export-ydpi="96"><tspan
          x="310.63281"
          y="38.176257"
-         id="tspan1122">direct kernel booting (UEFI, </tspan><tspan
+         id="tspan884">direct kernel booting (UEFI, </tspan><tspan
          x="310.63281"
          y="88.176257"
-         id="tspan1124">nmbl reduction)</tspan></text>
+         id="tspan886">nmbl reduction)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
        d="M 427.02273,75.784685 V 98.585666"
@@ -1181,7 +1178,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-5-9-6);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1126">shim</tspan></text>
+           id="tspan888">shim</tspan></text>
     </g>
     <g
        id="g53172"
@@ -1198,21 +1195,18 @@
          y="109.02135" />
       <text
          xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,70.719372,37.694954)"
+         transform="matrix(0.26458333,0,0,0.26458333,70.719372,42.986624)"
          id="text10939-0-1-7"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1-2-5);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="168.4375"
          y="0"><tspan
-           x="167.68407"
+           x="159.6441"
            y="329.92821"
-           id="tspan1130"><tspan
+           id="tspan894"><tspan
              style="text-align:center;text-anchor:middle"
-             id="tspan1128">kernel-final || </tspan></tspan><tspan
-           x="251.1041"
-           y="379.92821"
-           id="tspan1134"><tspan
+             id="tspan890">kernel || </tspan><tspan
              style="text-align:center;text-anchor:middle"
-             id="tspan1132">initrd </tspan></tspan></text>
+             id="tspan892">initrd </tspan></tspan></text>
     </g>
     <g
        id="g41702-8-4"
@@ -1234,7 +1228,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-97-7);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1136">UEFI</tspan></text>
+           id="tspan896">UEFI</tspan></text>
     </g>
     <g
        id="g41722-3-49"
@@ -1256,7 +1250,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9-3-4);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1138">userspace</tspan></text>
+           id="tspan898">userspace</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -1268,7 +1262,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-661.04688"
          y="33.975085"
-         id="tspan1140">status quo (UEFI)</tspan></text>
+         id="tspan900">status quo (UEFI)</tspan></text>
     <a
        id="a53367"
        transform="translate(-278.99773,-5.9060856)"
@@ -1292,7 +1286,7 @@
            style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-5);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
              x="125.52539"
              y="329.92821"
-             id="tspan1142">shim</tspan></text>
+             id="tspan902">shim</tspan></text>
       </g>
     </a>
     <g
@@ -1315,7 +1309,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-6);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1144">grub2</tspan></text>
+           id="tspan904">grub2</tspan></text>
     </g>
     <g
        id="g41717"
@@ -1337,7 +1331,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-1);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1146">kernel </tspan></text>
+           id="tspan906">kernel </tspan></text>
     </g>
     <g
        id="g41702"
@@ -1359,7 +1353,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1148">UEFI</tspan></text>
+           id="tspan908">UEFI</tspan></text>
     </g>
     <g
        id="g41722"
@@ -1381,7 +1375,7 @@
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10941-9);fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><tspan
            x="125.52539"
            y="329.92821"
-           id="tspan1150">userspace</tspan></text>
+           id="tspan910">userspace</tspan></text>
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker54608)"
@@ -1429,7 +1423,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1232.2305"
          y="112.03593"
-         id="tspan1152">verifies and loads shim</tspan></text>
+         id="tspan912">verifies and loads shim</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,436.87705,33.907068)"
@@ -1440,7 +1434,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1232.2305"
          y="112.03593"
-         id="tspan1154">verifies and loads shim</tspan></text>
+         id="tspan914">verifies and loads shim</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,830.77569,31.163635)"
@@ -1451,7 +1445,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1232.2305"
          y="112.03593"
-         id="tspan1156">verifies and loads shim</tspan></text>
+         id="tspan916">verifies and loads shim</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,5.452127,-7.6368338)"
@@ -1462,19 +1456,19 @@
        inkscape:export-ydpi="96"><tspan
          x="-1239.4941"
          y="421.05546"
-         id="tspan1158">pivots from hardware root of trust to OS root of trust
+         id="tspan918">pivots from hardware root of trust to OS root of trust
 </tspan><tspan
          x="-1239.4941"
          y="461.05546"
-         id="tspan1160">sets up verification for later components
+         id="tspan920">sets up verification for later components
 </tspan><tspan
          x="-1239.4941"
          y="501.05546"
-         id="tspan1162">handles keying/revocations
+         id="tspan922">handles keying/revocations
 </tspan><tspan
          x="-1239.4941"
          y="541.05546"
-         id="tspan1164">verifies and loads next stage</tspan></text>
+         id="tspan924">verifies and loads next stage</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,438.7989,-5.0545852)"
@@ -1485,19 +1479,19 @@
        inkscape:export-ydpi="96"><tspan
          x="-1239.4941"
          y="421.05546"
-         id="tspan1166">pivots from hardware root of trust to OS root of trust
+         id="tspan926">pivots from hardware root of trust to OS root of trust
 </tspan><tspan
          x="-1239.4941"
          y="461.05546"
-         id="tspan1168">sets up verification for later components
+         id="tspan928">sets up verification for later components
 </tspan><tspan
          x="-1239.4941"
          y="501.05546"
-         id="tspan1170">handles keying/revocations
+         id="tspan930">handles keying/revocations
 </tspan><tspan
          x="-1239.4941"
          y="541.05546"
-         id="tspan1172">verifies and loads next stage</tspan></text>
+         id="tspan932">verifies and loads next stage</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,832.69754,-7.7980182)"
@@ -1508,19 +1502,19 @@
        inkscape:export-ydpi="96"><tspan
          x="-1239.4941"
          y="421.05546"
-         id="tspan1174">pivots from hardware root of trust to OS root of trust
+         id="tspan934">pivots from hardware root of trust to OS root of trust
 </tspan><tspan
          x="-1239.4941"
          y="461.05546"
-         id="tspan1176">sets up verification for later components
+         id="tspan936">sets up verification for later components
 </tspan><tspan
          x="-1239.4941"
          y="501.05546"
-         id="tspan1178">handles keying/revocations
+         id="tspan938">handles keying/revocations
 </tspan><tspan
          x="-1239.4941"
          y="541.05546"
-         id="tspan1180">verifies and loads next stage</tspan></text>
+         id="tspan940">verifies and loads next stage</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,2.4419748,-27.370734)"
@@ -1531,19 +1525,19 @@
        inkscape:export-ydpi="96"><tspan
          x="-1228.0234"
          y="719.18437"
-         id="tspan1182">typically hidden / no delay
+         id="tspan942">typically hidden / no delay
 </tspan><tspan
          x="-1228.0234"
          y="759.18437"
-         id="tspan1184">target selection / editing
+         id="tspan944">target selection / editing
 </tspan><tspan
          x="-1228.0234"
          y="799.18437"
-         id="tspan1186">handles a limited set of storage/network
+         id="tspan946">handles a limited set of storage/network
 </tspan><tspan
          x="-1228.0234"
          y="839.18437"
-         id="tspan1188">calls back to shim to verify kernel</tspan></text>
+         id="tspan948">calls back to shim to verify kernel</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,7.1801869,13.411456)"
@@ -1554,26 +1548,26 @@
        inkscape:export-ydpi="96"><tspan
          x="-1246.8379"
          y="1434.8582"
-         id="tspan1190">enters EFI stub
+         id="tspan950">enters EFI stub
 </tspan><tspan
          x="-1246.8379"
          y="1474.8582"
-         id="tspan1192">brings up hardware using kernel module </tspan><tspan
+         id="tspan952">brings up hardware using kernel module </tspan><tspan
          x="-1246.8379"
          y="1514.8582"
-         id="tspan1194">drivers
+         id="tspan954">drivers
 </tspan><tspan
          x="-1246.8379"
          y="1554.8582"
-         id="tspan1196">mount filesystems
+         id="tspan956">mount filesystems
 </tspan><tspan
          x="-1246.8379"
          y="1594.8582"
-         id="tspan1198">unpack initrd (originally from disk)
+         id="tspan958">unpack initrd (originally from disk)
 </tspan><tspan
          x="-1246.8379"
          y="1634.8582"
-         id="tspan1200">go to userspace</tspan></text>
+         id="tspan960">go to userspace</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,0.27673236,4.6095822)"
@@ -1584,7 +1578,7 @@
        inkscape:export-ydpi="96"><tspan
          x="-1220.7461"
          y="1793.2703"
-         id="tspan1202">goal</tspan></text>
+         id="tspan962">goal</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,7.8008276,-0.99665642)"
@@ -1595,19 +1589,19 @@
        inkscape:export-ydpi="96"><tspan
          x="388.66211"
          y="629.26249"
-         id="tspan1204">enters EFI stub
+         id="tspan964">enters EFI stub
 </tspan><tspan
          x="388.66211"
          y="669.26249"
-         id="tspan1206">using UEFI drivers, brings up console + input
+         id="tspan966">brings up console + input (can be UEFI drivers)
 </tspan><tspan
          x="388.66211"
          y="709.26249"
-         id="tspan1208">unpacks initrd
+         id="tspan968">unpacks initrd from self
 </tspan><tspan
          x="388.66211"
          y="749.26249"
-         id="tspan1210">goes to userspace</tspan></text>
+         id="tspan970">goes to userspace</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -1628,19 +1622,19 @@
        inkscape:export-ydpi="96"><tspan
          x="379.65625"
          y="861.6414"
-         id="tspan1212">runs any tools needed for next stage
+         id="tspan972">runs any tools needed for next stage
 </tspan><tspan
          x="379.65625"
          y="901.6414"
-         id="tspan1214">(e.g., storage, network, etc.)
+         id="tspan974">(e.g., storage, network, etc.)
 </tspan><tspan
          x="379.65625"
          y="941.6414"
-         id="tspan1216">mount any filesystems needed
+         id="tspan976">mount any filesystems needed
 </tspan><tspan
          x="379.65625"
          y="981.6414"
-         id="tspan1218">what tools get run is configurable</tspan></text>
+         id="tspan978">what tools get run is configurable</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -1656,19 +1650,19 @@
        inkscape:export-ydpi="96"><tspan
          x="386.71289"
          y="1061.118"
-         id="tspan1220">target selection / editing
+         id="tspan980">target selection / editing
 </tspan><tspan
          x="386.71289"
          y="1101.118"
-         id="tspan1222">for user familiarity, not because we want it
+         id="tspan982">for user familiarity, not because we want it
 </tspan><tspan
          x="386.71289"
          y="1141.118"
-         id="tspan1224">grub-emu can do this today
+         id="tspan984">grub-emu can do this today
 </tspan><tspan
          x="386.71289"
          y="1181.118"
-         id="tspan1226">typically hidden/no-delay</tspan></text>
+         id="tspan986">typically hidden/no-delay</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-0.65860143,9.361527)"
@@ -1679,11 +1673,11 @@
        inkscape:export-ydpi="96"><tspan
          x="420.63477"
          y="1310.45"
-         id="tspan1228">verify next kernel using shim's OS root of trust
+         id="tspan988">verify next kernel using shim's OS root of trust
 </tspan><tspan
          x="420.63477"
          y="1350.45"
-         id="tspan1230">(diagram assumes next kernel is Linux)</tspan></text>
+         id="tspan990">(diagram assumes next kernel is Linux)</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,13.67644,-4.7812565)"
@@ -1694,23 +1688,23 @@
        inkscape:export-ydpi="96"><tspan
          x="366.45508"
          y="1533.3777"
-         id="tspan1232">enters EFI stub
+         id="tspan992">enters EFI stub
 </tspan><tspan
          x="366.45508"
          y="1573.3777"
-         id="tspan1234">bring up hardware using kernel module drivers
+         id="tspan994">bring up hardware using kernel module drivers
 </tspan><tspan
          x="366.45508"
          y="1613.3777"
-         id="tspan1236">mount filesystems
+         id="tspan996">mount filesystems
 </tspan><tspan
          x="366.45508"
          y="1653.3777"
-         id="tspan1238">unpack initrd (possibly included)
+         id="tspan998">unpack initrd (possibly bundled)
 </tspan><tspan
          x="366.45508"
          y="1693.3777"
-         id="tspan1240">go to userspace</tspan></text>
+         id="tspan1000">go to userspace</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,15.361093,8.0548286)"
@@ -1721,7 +1715,7 @@
        inkscape:export-ydpi="96"><tspan
          x="360.08789"
          y="1790.0086"
-         id="tspan1242">goal</tspan></text>
+         id="tspan1002">goal</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,8.1731979,13.913285)"
@@ -1732,23 +1726,23 @@
        inkscape:export-ydpi="96"><tspan
          x="1876.0059"
          y="1452.3523"
-         id="tspan1244">enters EFI stub
+         id="tspan1004">enters EFI stub
 </tspan><tspan
          x="1876.0059"
          y="1492.3523"
-         id="tspan1246">bring up hardware using kernel module drivers
+         id="tspan1006">bring up hardware using kernel module drivers
 </tspan><tspan
          x="1876.0059"
          y="1532.3523"
-         id="tspan1248">mount filesystems
+         id="tspan1008">mount filesystems
 </tspan><tspan
          x="1876.0059"
          y="1572.3523"
-         id="tspan1250">unpack initrd
+         id="tspan1010">unpack bundled initrd
 </tspan><tspan
          x="1876.0059"
          y="1612.3523"
-         id="tspan1252">go to userspace</tspan></text>
+         id="tspan1012">go to userspace</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-5.4290724,12.538864)"
@@ -1759,6 +1753,6 @@
        inkscape:export-ydpi="96"><tspan
          x="1927.416"
          y="1762.6922"
-         id="tspan1254">goal</tspan></text>
+         id="tspan1014">goal</tspan></text>
   </g>
 </svg>
