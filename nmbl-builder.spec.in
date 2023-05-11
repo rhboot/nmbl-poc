@@ -67,6 +67,51 @@ mv nmbl-workstation.signed.uki nmbl-workstation.uki
 %install
 %make_install ESPDIR="%{efi_esp_dir}"
 
+%posttrans -n nmbl
+check_lvm () {
+    lsblk -f | grep "LVM" > /dev/null 2>&1
+}
+
+set_lvm () {
+    root=$(mount | grep " / " | awk '{print $1}')
+    rd_lvm_lv=$(grep -oP '(?<=rd.lvm.lv=)[^ ]*' /proc/cmdline)
+    root_args="root=$root ro rd.lvm.lv=$rd_lvm_lv"
+}
+
+check_btrfs () {
+    fs=$(lsblk -f | grep "$(awk '/ \/ / {print $1}' /etc/fstab | grep -oP '(?<=UUID=)[^ ]*')" | awk '{print $2}')
+    if [ "$fs" = "btrfs" ]
+    then
+            set_btrfs
+    fi
+}
+
+set_btrfs () {
+    root=$(grep -oP '(?<=root=)[^ ]*' /proc/cmdline)
+    rootflags=$(grep -oP '(?<=rootflags=)[^ ]*' /proc/cmdline)
+    root_args="root=$root ro rootflags=$rootflags"
+}
+
+set_standard () {
+    root=$(grep -oP '(?<=root=)[^ ]*' /proc/cmdline)
+    root_args="root=$root ro"
+}
+
+if check_lvm
+then
+    set_lvm
+fi
+
+check_btrfs
+set_standard
+
+echo -n "\nmbl-cloud.uki quiet console=ttyS0 $(echo $root_args) boot=$(awk '/ \/boot / {print $1}' /etc/fstab) root=$(awk '/ \/ / {print $1}' /etc/fstab) rd.system.gpt_auto=0" | iconv -f UTF8 -t UCS-2LE | efibootmgr -b 0010 -C -d /dev/vda -p 1 -L nmbl-switch-root -l /EFI/fedora/shimx64.efi -@ - -n 0010
+echo -n "\nmbl-workstation.uki quiet console=ttyS0 $(echo $root_args) boot=$(awk '/ \/boot / {print $1}' /etc/fstab) rd.systemd.gpt_auto=0" | iconv -f UTF8 -t UCS-2LE | efibootmgr -b 0011 -C -d /dev/vda -p 1 -L nmbl-kexec -l /EFI/fedora/shimx64.efi -@ - -n 0011
+
+%preun -n nmbl
+efibootmgr -q -B -b 00010
+efibootmgr -q -B -b 00011
+
 %files -n nmbl
 %defattr(-,root,root,-)
 %{efi_esp_dir}/*.uki
