@@ -12,11 +12,12 @@ set_lvm () {
 }
 
 check_btrfs () {
-    fs=$(lsblk -f | grep "$(awk '/ \/ / {print $1}' /etc/fstab | grep -oP '(?<=UUID=)[^ ]*')" | awk '{print $2}')
-    if [ "$fs" = "btrfs" ]
-    then
-	    set_btrfs
-    fi
+    while read -r device mountpoint fstype options dump pass; do
+        if [ "$mountpoint" = "/" ] && [ "$fstype" = "btrfs"]; then
+            set_btrfs
+            break
+        fi
+    done < /proc/mounts
 }
 
 set_btrfs () {
